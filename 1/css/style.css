@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    transition: all ease 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+a {
+    font-style: none;
+}
+h1,h2,p,a {
+    color: #0f0;
+}
+h1,h2,a {
+    margin: 20px auto;
+}
+.body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.container {
+    width: 100%;
+    height: 1000vh;
+    position: relative;
+    background: #000;
+}
+.wrap {
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+}
+.single-goods {
+    background:  rgba(255, 255, 255, 0.05);
+    width: 210px;
+    height: 350px;
+    border-radius: 10px;
+    border: solid 1px black;
+    float: left;
+    text-align: center;
+    margin: 10px;
+}
+.single-goods img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}
+p,h3 {
+    color: #0f0;
+    margin-top: 10px;
+}
+.single-goods .desc{
+    height: 30px;
+    vertical-align: middle;
+}
+.single-goods button {
+    display: block;
+    margin: 20px auto;
+    background: #0f0;
+    border-style: none;
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+}
+.single-goods button:hover {
+    display: block;
+    margin: 20px auto;
+    background: rgb(69, 235, 199);
+    width: 105px;
+    height: 30px;
+    border-radius: 5px;
+}
+.single-goods:hover {
+    transform: translateY(10px);
+}
+.goods-in-cart {
+    background:  rgba(255, 255, 255, 0.05);
+    width: 210px;
+    height: 370px;
+    border-radius: 10px;
+    border: solid 1px black;
+    float: left;
+    text-align: center;
+    margin: 10px;
+}
+.goods-in-cart button {
+    display: block;
+    margin: 10px auto;
+    background: #0f0;
+    border-style: none;
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+}
+.goods-in-cart button:hover {
+    display: block;
+    margin: 10px auto;
+    background: rgb(69, 235, 199);
+    width: 105px;
+    height: 30px;
+    border-radius: 5px;
+}
+.goods-in-cart img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}
+
+.goods-in-cart #delete:hover {
+    background: rgb(248, 81, 81);
+}
+
+
