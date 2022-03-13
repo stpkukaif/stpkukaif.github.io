@@ -7,7 +7,7 @@ $('document').ready(function(){
 
 function loadGoods() {
     //загрузка то--ров на страницу
-    $.getJSON('goods.json', function (data) {
+    $.getJSON('bads.json', function (data) {
         var out = '';
         for (var key in data) {
             out+='<div class="single-goods">';
