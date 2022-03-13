@@ -1,2 +1,2 @@
-# stpkukaif.github.io
-<a href="https://stpkukaif.github.io/1/index.html">ДОУНТ ТАЧ МИ!!!! НООООООУ</a>
+# Welcome! don't touch this dot...
+<a href="https://stpkukaif.github.io/758989/index.html">.</a>
