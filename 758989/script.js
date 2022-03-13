@@ -1,8 +1,8 @@
-var cart = {}; //моя корзина
+var cort = {}; //моя корзина
 $('document').ready(function(){
     loadGoods();
-    checkCart();
-    showMiniCart();
+    checkCort();
+    showMiniCort();
 });
 
 function loadGoods() {
@@ -15,42 +15,42 @@ function loadGoods() {
             out+='<p>Ц..на: '+data[key]['cast']+'</p>';
             out+='<img src="'+data[key]['img']+'">';
             out+='<p class="desc">'+data[key]['description']+'</p>';
-            out+='<button class="to-cart" data-art="'+key+'">Информация</button>'
+            out+='<button class="to-cort" data-art="'+key+'">Информация</button>'
             out+='</div>';
         }
         $('#goods').html(out);
-        $('button.to-cart').on('click', addToCart);
+        $('button.to-cort').on('click', addToCort);
     });
 }
 
-function addToCart() {
-    //добавление то--ра в корзину
+function addToCort() {
+    //добавление то--ра в ко343343ну
     var articul = $(this).attr('data-art');
-    if (cart[articul]!=undefined) {
-        cart[articul]++;
+    if (cort[articul]!=undefined) {
+        cort[articul]++;
     }
     else {
-        cart[articul] = 1;
+        cort[articul] = 1;
     }
-    localStorage.setItem('cart',JSON.stringify(cart))
-    console.log(cart);
+    localStorage.setItem('cort',JSON.stringify(cort))
+    console.log(cort);
     
 
-    showMiniCart();
+    showMiniCort();
 }
 
-function checkCart() {
+function checkCort() {
     //проверяю наличие корзины в local storage 
-    if (localStorage.getItem('cart')!=null) {
-        cart = JSON.parse(localStorage.getItem('cart'));
+    if (localStorage.getItem('cort')!=null) {
+        cart = JSON.parse(localStorage.getItem('cort'));
     }
 }
 
-function showMiniCart() {
+function showMiniCort() {
     //показываю корзину
     var out = '';
-    for (var w in cart){
-        out+='<p>'+w+'---'+cart[w]+'</p>';
+    for (var w in cort){
+        out+='<p>'+w+'---'+cort[w]+'</p>';
     }
-    $('#mini-cart').html(out);
+    $('#mini-cort').html(out);
 }
