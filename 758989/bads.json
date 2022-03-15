@@ -1,8 +1,8 @@
 {
     "00001" : {
-        "name" : "ASUS zb602kl",
+        "name" : "ASUS-zb602kl",
         "cast" : 4300-3900,
-        "description" : "32Гб/nandroid6.0/nОЗУ-3г/nPUBG на максах",
+        "description" : "32Гб android6.0ОЗУ-3гб",
         "img" : "./image/phone1.jpg",
         "owner" : "u1757"
     },
