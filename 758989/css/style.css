@@ -36,7 +36,7 @@ h1,h2,a {
 
 }
 .single-goods {
-    background:  rgba(255, 255, 255, 0.05);
+    background:  rgba(255, 255, 255, 0.1);
     width: 210px;
     height: 350px;
     border-radius: 10px;
