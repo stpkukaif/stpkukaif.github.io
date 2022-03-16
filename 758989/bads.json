@@ -1,8 +1,8 @@
 {
     "00001" : {
         "name" : "ASUS-zb602kl",
-        "cast" : 4300,
-        "description" : "32Гб android-6 ОЗУ-3гб",
+        "cast" : 3850,
+        "description" : "32Гб snapdragon650 (2020г.)",
         "img" : "./image/phone1.jpg",
         "owner" : "u1757"
     },
