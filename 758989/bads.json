@@ -11,7 +11,7 @@
         "cast" : 40000,
         "description" : "отличный телефон",
         "img" : "./image/iphone.png",
-        "owner" : "u0002"
+        "owner" : "u0012"
     },
     "00003" : {
         "name" : "ipod",
