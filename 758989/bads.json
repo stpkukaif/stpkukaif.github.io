@@ -1,10 +1,10 @@
 {
     "00001" : {
-        "name" : "apple watch",
-        "cast" : 25000,
-        "description" : "неплохие часы",
-        "img" : "./image/watch.png",
-        "owner" : "u0001"
+        "name" : "ASUS zb602kl",
+        "cast" : 3850,
+        "description" : "32Гб Snapdragon 650",
+        "img" : "./image/phone1.png",
+        "owner" : "u1757"
     },
     "00002" : {
         "name" : "iphone",
