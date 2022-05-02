@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700');
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: 'poppins';
+    transition: all .5s;
+}
+
+
+.body {
+    width: 100%;
+    min-height: 100vh;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    background: #222;
+    transform: transtaleZ(-100px);
+}
+.container .siga {
+    transform-style: preserve-3d;
+    animation: animate 10s linear infinite;
+    background-color: #222;
+}
+@keyframes animate {
+    0% {
+        transform: perspective(1000px) rotateX(0deg);
+    }
+    100% {
+        transform: perspective(1000px) rotateX(-360deg);
+    }
+}
+.container .siga span {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    position: absolute;
+    color:#fff;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotateX(calc(var(--i) * 36deg)) translateZ(55px);
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.4);
+    
+}
+
+.container .siga span i:first-child {
+    font-style: normal;
+    color: #ec9535;
+
+}
+.container .siga span i:last-child {
+    font-style: normal;
+    color: #fff;
+}
+.container .siga span i:first-child:after {
+    content: 'l';
+    color: #c0c0c0;
+}
+.container .siga span i:last-child{
+    color: #f00;
+    filter: blur(2px);
+    text-shadow: -4px 0 2px #000,
+            8px 0 20px rgba(255,0,0,0.6),       
+                8px 0 24px rgba(255,0,0,0.6),
+                8px 0 0 #222,
+                12px 0 20px #555,
+                16px 0 20px #666,
+                20px 0 20px #888,
+                24px 0 20px #999;
+}
+
+.container .siga:hover span i:last-child {
+    text-shadow: -4px 0 2px #000,
+            8px 0 10px rgb(255, 174, 0),       
+                8px 0 0 #222,
+                12px 0 20px #555,
+                16px 0 20px #666,
+                20px 0 20px #888,
+                24px 0 20px #999;
+}
+.container .vapour{
+    position: relative;
+    display: flex;
+    z-index: 1;
+    pad: 0 20px;
+} 
+.container .vapour span {
+    position: relative;
+    background:#666;
+    display:block;
+    margin: 0 2px 50px;
+    left: 500px;
+    bottom: 50px;
+    min-width: 8px;
+    height: 120px;
+    border-radius: 50%;
+    animation: vapour 5s linear infinite;
+    filter: blur(8px);
+    animation-delay: calc(var(--j) * -0.7s);
+
+}
+@keyframes vapour {
+    0% {
+        transform: translateY(0) scaleX(1);
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-150px) scaleX(5);
+    }
+    85% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(-400px) scaleX(10);
+    }
+}
+
+

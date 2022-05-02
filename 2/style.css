@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background-image: url(./img/bg.jpg);
+    overflow: hidden;
+}
+.container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 200px auto;
+    perspective: 500px;
+}
+.cube {
+    width: inherit;
+    height: inherit;
+    transform-style: preserve-3d;
+}
+.side {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+}
+.front {
+    transform: translateZ(150px);
+}
+.back {
+    transform: rotateY(180deg) translateZ(150px);
+}
+.right {
+    transform: rotateY(90deg) translateZ(150px);
+}
+.left {
+    transform: rotateY(-90deg) translateZ(150px);
+}
+.top {
+    transform: rotateX(90deg) translateZ(150px);
+}
+.bottom {
+    transform: rotateX(-90deg) translateZ(150px);
+}
