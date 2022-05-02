@@ -34,7 +34,7 @@ body {
     transition: .5s;
     z-index: var(--i);
     animation: animate 5s linear infinite;
-    animation-delay: calc(var(--i)*0.5s);
+    animation-delay: calc(var(--i)*0.4s);
 }
 @keyframes animate {
     0% {
