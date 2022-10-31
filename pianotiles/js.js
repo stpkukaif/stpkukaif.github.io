@@ -17,7 +17,7 @@ var tile4 = new Image();
 
 var tileW = 70;
 var tileH = 100;
-var speed = 0.5;
+var speed = 1;
 var score = 0;
     var posx1 = 0; 
     var posx2 = 70; 
@@ -31,21 +31,21 @@ var score = 0;
     requestAnimationFrame(draw);
     setInterval(()=>{
         if(posy1 < 305){
-            posy1+=3;
+            posy1+=2;
         }else if(posy1>=305 && posy1<400){
             tile1.src = "img/tileloose.png"
             stopgame();
             
         };
         if(posy2 < 305){
-            posy2+=3;
+            posy2+=2;
         }else if(posy2>=305 && posy2<400){
             
             tile2.src = "img/tileloose.png";
             stopgame();
         };
         if(posy3 < 305){
-            posy3+=3;
+            posy3+=2;
         }else if(posy3>=305 && posy3<400){
             
             tile3.src = "img/tileloose.png";
@@ -54,7 +54,7 @@ var score = 0;
         };
     
         if(posy4 < 305){
-            posy4+=3;
+            posy4+=2;
         }else if(posy4>=305 && posy4<400){
             
             tile4.src = "img/tileloose.png"
